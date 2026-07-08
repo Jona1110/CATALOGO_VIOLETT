@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Catálogo | Violett</title>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#B774F5">
+    <link rel="stylesheet" href="catalogo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQjc3NEY1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik02IDJMMyA2djE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMlY2bC0zLTR6Ij48L3BhdGg+PC9zdmc+">
+</head>
+<body>
+
+    <div id="loader" class="loader-overlay">
+        <div class="spinner"></div>
+        <p>Cargando colección...</p>
+    </div>
+
+<!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
+<header class="app-header">
+    <div class="brand-container">
+        <!-- Contenedor exclusivo para la imagen del logo -->
+        <div class="brand-logo">
+            <img src="image.png" alt="Violett Logo">
+        </div>
+        <!-- Información de la marca -->
+        <div class="brand-info">
+            <h1>Violett</h1>
+            <span>Catálogo Exclusivo</span>
+        </div>
+        <!-- Botón de Instalación PWA (Alineado a la derecha) -->
+        <button id="btn-install" class="btn-install hidden">
+            📲 Instalar App
+        </button>
+    </div>
+</header>
+
+    <main class="catalog-main">
+        <div class="search-section">
+            <h2 class="section-title">Descubre nuestros productos</h2>
+            <p class="section-subtitle">Encuentra tus favoritos y pídelos directo por WhatsApp.</p>
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Buscar maquillaje, cuidado personal...">
+            </div>
+        </div>
+
+        <div id="products-grid" class="grid-container">
+            </div>
+
+        <div id="empty-state" class="hidden empty-state">
+            <div class="empty-icon">🌸</div>
+            <h3>No encontramos lo que buscas</h3>
+            <p>Intenta con otra palabra clave o navega por nuestro catálogo completo.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Violett. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Catálogo Violett",
+  "short_name": "Violett",
+  "description": "Catálogo Exclusivo de productos",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#B774F5",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
